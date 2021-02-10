@@ -4,8 +4,9 @@
   "description": "Online portfolio website which will reside at my primary domain.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sudo nodemon ./server/server.js"
+    "start-client": "react-scripts start",
+    "build": "react-scripts build",
+    "start": "yarn run build && sudo nodemon ./server/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,20 @@
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.7",
-    "pug": "^3.0.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

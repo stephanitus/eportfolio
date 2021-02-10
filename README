@@ -1,0 +1,7 @@
+Welcome to the repository for my e-portfolio!
+
+1. Enter main directory and run 'yarn' to gather dependencies
+
+2. `yarn run start' to build product
+
+This website is hosted at https://stephanschmidt.dev
